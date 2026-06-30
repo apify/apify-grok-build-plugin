@@ -3,7 +3,7 @@ name: Sync plugin SHA to xAI marketplace
 # After every push to main, open (or update) a PR against the xAI plugin
 # marketplace that re-pins the `apify` plugin entry to the new commit SHA.
 #
-# Prerequisites (see .github/MARKETPLACE.md):
+# Prerequisites:
 #   1. A fork of xai-org/plugin-marketplace must exist at $FORK.
 #   2. A fine-grained PAT scoped to that fork (Contents: write,
 #      Pull requests: write) must be stored as the repo secret MARKETPLACE_PAT.
@@ -25,7 +25,7 @@ concurrency:
 
 env:
   UPSTREAM: xai-org/plugin-marketplace
-  FORK: apify/plugin-marketplace
+  FORK: apify/xaiplugin-marketplace
   PLUGIN_NAME: apify
   PR_BRANCH: apify/update-sha
 
@@ -62,7 +62,7 @@ jobs:
 
           # Update-only: bail out cleanly if the entry isn't upstream yet.
           if ! jq -e --arg n "$PLUGIN_NAME" 'any(.plugins[]; .name == $n)' "$file" >/dev/null; then
-            echo "::warning::No '$PLUGIN_NAME' entry found in $UPSTREAM yet — submit the first PR manually (see .github/MARKETPLACE.md). Skipping."
+            echo "::warning::No '$PLUGIN_NAME' entry found in $UPSTREAM yet — submit the first PR manually. Skipping."
             echo "skip=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
