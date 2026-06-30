@@ -138,8 +138,8 @@ The executable requirements come from the skills themselves: Route 1 uses the MC
 
 This plugin is distributed through the [xAI Plugin Marketplace](https://github.com/xai-org/plugin-marketplace),
 pinned to a commit SHA of this repo. A GitHub Actions workflow re-pins the entry
-automatically on every push to `main`.
-for the one-time setup and the submission flow.
+automatically on every push to `main`. See [.github/workflows/sync-marketplace.yml](.github/workflows/sync-marketplace.yml)
+for prerequisites and the submission flow.
 
 ## License
 

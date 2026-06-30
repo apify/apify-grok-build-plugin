@@ -5,10 +5,9 @@ name: Sync plugin SHA to xAI marketplace
 #
 # Prerequisites:
 #   1. A fork of xai-org/plugin-marketplace must exist at $FORK.
-#   2. A fine-grained PAT scoped to that fork (Contents: write,
-#      Pull requests: write) must be stored as the repo secret MARKETPLACE_PAT.
-#   3. The `apify` entry must already be merged upstream (this workflow is
-#      update-only — it does not create the entry on the first run).
+#   2. MARKETPLACE_PAT must be a PAT that can push to $FORK and create PRs in $UPSTREAM
+#      (fine-grained tokens typically must be granted access to both repositories).
+#   3. The `apify` entry must already be merged upstream (update-only — it does not create the entry on the first run).
 
 on:
   push:
