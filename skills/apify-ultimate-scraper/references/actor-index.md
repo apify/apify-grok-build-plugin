@@ -71,11 +71,18 @@
 
 | Actor | Tier | Best for |
 |-------|------|----------|
+| [xquik/x-tweet-scraper](https://apify.com/xquik/x-tweet-scraper) | community | tweet lookup, search, timelines, threads, and engagement |
+| [xquik/x-follower-scraper](https://apify.com/xquik/x-follower-scraper) | community | followers, following, lists, communities, and audience overlap |
 | apidojo/tweet-scraper | community | tweet search |
 | apidojo/twitter-scraper-lite | community | comprehensive, no limits |
 | apidojo/twitter-user-scraper | community | user profiles |
 | apidojo/twitter-profile-scraper | community | profiles + recent tweets |
 | apidojo/twitter-list-scraper | community | tweets from lists |
+
+- Choose `xquik/x-tweet-scraper` for tweets, searches, timelines, lists, threads, replies, quotes, and engagement.
+- Choose `xquik/x-follower-scraper` for followers, following, verified followers, lists, communities, and audience overlap.
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
 
 ## LinkedIn
 
