@@ -24,7 +24,7 @@ concurrency:
 
 env:
   UPSTREAM: xai-org/plugin-marketplace
-  FORK: apify/xaiplugin-marketplace
+  FORK: apify/xai-plugin-marketplace
   PLUGIN_NAME: apify
   PR_BRANCH: apify/update-sha
 
