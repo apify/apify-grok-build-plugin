@@ -18,17 +18,19 @@ Official Apify plugin for Grok Build. It adds the Apify MCP server, one `apify` 
 
 ## Installation
 
-Install from this repo's URL:
+Install from this repo:
+
+```bash
+grok plugin install apify/apify-grok-build-plugin
+```
+
+Or from inside a Grok session:
 
 ```
-/install-plugin https://github.com/apify/apify-grok-build-plugin
+/plugins install https://github.com/apify/apify-grok-build-plugin
 ```
 
-Once listed in the xAI plugin marketplace, it will also be installable by name:
-
-```
-/install-plugin apify
-```
+Once listed in the xAI plugin marketplace, it will also be installable from the marketplace via the `/plugins` modal.
 
 ### Prerequisites
 
